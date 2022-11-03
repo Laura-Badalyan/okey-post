@@ -1,0 +1,41 @@
+.dataTable
+    .dataTable__inputBlock.inputBlock
+        +img("inputBlock__icon","general/search.svg")
+        input.inputBlock__searchInput.searchInp(type="search" placeholder="Поиск")
+        select.inputBlock__selectCountry.select
+            option.select__disabledOption(disabled="disabled" selected="selected") Страна
+            each item in selectCountryOptionItems
+                option.select__option= item
+        select.inputBlock__selectCategory.select
+            option.select__disabledOption(disabled="disabled" selected="selected") Категория
+            each item in selectCategoryOptionItems
+                option.select__option= item
+    button.dataTable__add ADD
+    table.dataTable__table.table
+        thead.table__head
+            each item in theadItems
+                th.table__item= item
+                    +img("table__sort","general/sort.svg")
+        tbody.table__body.tableBody
+            each item in data.reverse()
+                tr.tableBody__row
+                    each val in item
+                        if typeof val === "object"
+                            if val.text
+                                td.tableBody__item
+                                    +img("tableBody__item--img",val.src)
+                                    span.tableBody__item--category= val.text
+                            else
+                                td.tableBody__item
+                                    a.tableBody__item--link
+                                        +img("tableBody__item--download","general/download.svg")
+                                    +img("tableBody__item--delete","general/delete.svg")
+                                    .tableBody__item--status
+                        else
+                            td.tableBody__item= val
+    .dataTable__pagination.dataTablePagination
+        a.dataTablePagination__prevPage.prevPage
+            +img("dataTablePagination__prevPage--img","general/prev.svg")
+        a.dataTablePagination__thisPage 1
+        a.dataTablePagination__nextPage.nextPage
+            +img("dataTablePagination__nextPage--img","general/next.svg")

@@ -1,0 +1,28 @@
+.table{
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  &__head{
+    & tr{
+      display: block;
+      width: 100%;
+      margin-top: 50px;
+    }
+  }
+  &__body{
+
+  }
+  &__item{
+    width: 150px;
+    cursor: pointer;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+    &:nth-child(2){
+      width: 230px;
+    }
+  }
+  &__sort{
+    cursor: pointer;
+    padding: 0 5px;
+  }
+}

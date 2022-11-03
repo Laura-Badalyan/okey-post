@@ -1,0 +1,16 @@
+.select{
+  outline: none;
+  background: $color-selago;
+  font-family: $font-inter;
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+
+  &__disabledOption{
+    display: none;
+  }
+  &>option{
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+    font-size: 14px;
+  }
+}

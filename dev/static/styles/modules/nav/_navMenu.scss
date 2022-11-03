@@ -1,0 +1,14 @@
+.navMenu{
+  &__item{
+    list-style-type: none;
+    :focus{
+      border-bottom: 2px solid $color-royal-blue;
+    }
+  }
+  &__link{
+    text-decoration: none;
+    color: $color-blue-zodiac;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+}

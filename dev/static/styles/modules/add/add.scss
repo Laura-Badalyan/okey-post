@@ -1,0 +1,90 @@
+.add{
+  align-items: center;
+  margin: 15px auto 0;
+  font-family: $font-inter;
+  font-weight: $font-weight-bold;
+  &__bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $color-translucent;
+  }
+  .addBlock{
+    width: 500px;
+    height: 620px;
+    position: absolute;
+    background: $color-white;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 14px 40px 100px;
+    &__select{
+      font-size: 13px;
+      font-family: $font-inter;
+      font-weight: $font-weight-bold;
+      border: none;
+      margin: 8px 13px 31px;
+      &>option{
+        font-size: 13px;
+        font-family: $font-inter;
+        font-weight: $font-weight-bold;
+      }
+    }
+    &__item{
+    }
+    &__label{
+      display: block;
+      font-size: 10px;
+      padding: 0 10px;
+      font-family: $font-inter;
+      font-weight: $font-weight-bold;
+    }
+    &__input{
+      max-width: 400px;
+      max-height: 25px;
+      width: 100%;
+      height: 100%;
+      background: $color-selago;
+      border-radius: 21px;
+      outline: none;
+      border: none;
+      padding: 10px 0 10px 15px;
+      margin: 15px auto;
+      font-size: 13px;
+      font-family: $font-inter;
+      font-weight: $font-weight-bold;
+    }
+    &__cross{
+      position: absolute;
+      top: 5%;
+      right: 5%;cursor: pointer;
+    }
+  }
+  &__save{
+    max-width: 120px;
+    max-height: 35px;
+    width: 100%;
+    height: 100%;
+    background: $color-royal-blue;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: $color-white;
+    padding: 5px;
+    margin: 10px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 117%;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+}

@@ -1,0 +1,21 @@
+//NAV BLOCK
+@import "dev/static/styles/modules/nav/nav";
+@import "dev/static/styles/modules/nav/navLogo";
+@import "dev/static/styles/modules/nav/navMenu";
+@import "dev/static/styles/modules/nav/navProfile";
+
+//DATATABLE
+@import "dev/static/styles/modules/dataTable/dataTable";
+@import "dev/static/styles/modules/dataTable/dataTable_inputBlock";
+@import "dev/static/styles/modules/dataTable/dataTable_select";
+@import "dev/static/styles/modules/dataTable/dataTable_table";
+@import "dev/static/styles/modules/dataTable/dataTable_tableBody";
+@import "dev/static/styles/modules/dataTable/dataTable_pagination";
+
+//ADMIN
+@import "dev/static/styles/modules/admin/admin";
+@import "admin/admin_profile";
+@import "admin/admin_profileInfo";
+
+//ADD
+@import "add/add";

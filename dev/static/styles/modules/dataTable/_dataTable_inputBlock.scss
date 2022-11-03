@@ -1,0 +1,29 @@
+.inputBlock{
+  &__icon{
+    position: absolute;
+    padding: 12px;
+  }
+  &__searchInput{
+    margin: 0 auto;
+    padding: 5px 10px 5px 41px;
+    outline: none;
+    border: none;
+    max-height: 42px;
+    max-width: 780px;
+    width: 100%;
+    height: 100%;
+    background-color: $color-selago;
+    border-radius: 21px;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+  &__selectCountry{
+  border: none;
+  }
+  &__selectCategory{
+    padding: 3px 0 3px 10px;
+    border: none;
+    border-left: 2px solid $color-nepal;;
+  }
+
+}

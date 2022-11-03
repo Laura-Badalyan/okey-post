@@ -1,0 +1,13 @@
+.nav
+    .nav__logo.navLogo
+        .navLogo__logo
+            +img("navLogo__logo--img","general/navLogo.jpg")
+        .navLogo__text PreLanding Redaktor
+    ul.nav__menu.navMenu
+        each val in menuItems
+            li.navMenu__item
+                a.navMenu__link(href=""+val.link)= val.name
+    .nav__profile.navProfile
+        .navProfile__avatar
+            +img("navProfile__avatar--img","general/navAvatar.png")
+

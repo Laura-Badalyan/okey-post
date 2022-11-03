@@ -1,0 +1,7 @@
+.add
+    .add__bg
+    .add_block.addBlock
+        +img("addBlock__cross","general/cross.svg")
+        each value in add_new_items
+            +add_new_item(value)
+    button.add__save Сохранить

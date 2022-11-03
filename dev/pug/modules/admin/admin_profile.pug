@@ -1,0 +1,20 @@
+.adminProfile
+    .adminProfile__bg
+    .adminProfile__block
+        .adminProfile__header
+            p.adminProfile__header--text Профиль
+            +img("adminProfile__header--cross","general/cross.svg")
+        .adminProfile__info.profileInfo
+            .profileInfo__avatar
+            .profileInfo__icon
+                +img("profileInfo__icon--img","general/upload.svg")
+            input.profileInfo__upload(type="file" accept="image/*")
+            .profileInfo__name Phillip Mackie
+            .profileInfo__form
+                label.profileInfo__label Логин должно быть не менее 3 символов !
+                input.profileInfo__input(type="text" placeholder="Логин : admin" required)
+                label.profileInfo__label ФИО должно быть не менее 8 символов !
+                input.profileInfo__input(type="text" placeholder="ФИО : admin" required)
+                label.profileInfo__label Электронная почта недействительна
+                input.profileInfo__input(type="text" placeholder="Эл. адрес : admin@plr.ru" required)
+                button.profileInfo__save Сохранить

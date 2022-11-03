@@ -1,0 +1,93 @@
+.profileInfo{
+  &__avatar{
+    background: url(../images/general/navAvatar.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    margin: auto;
+    border-radius: 50%;
+  }
+  &__icon{
+    width: 16px;
+    height: 16px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    background: $color-white;
+    position: absolute;
+    top: 23%;
+    display: flex;
+    right: 42%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    &--img{
+
+    }
+  }
+  &__upload{
+    width: 66px;
+    position: absolute;
+    top: 14%;
+    left: 44%;
+    height: 69px;
+    cursor: pointer;
+    background: aqua;
+    opacity: 0;
+  }
+  &__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto 0;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+  &__form{
+    padding: 14px 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  &__label{
+    color: $color-puce;
+    font-size: 10px;
+    padding: 0 10px;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+  &__input{
+    max-width: 400px;
+    max-height: 40px;
+    width: 100%;
+    height: 100%;
+    background: $color-selago;
+    border-radius: 21px;
+    outline: none;
+    border: none;
+    padding: 15px 0 15px 15px;
+    margin: 15px auto;
+    font-size: 13px;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+  &__save{
+    max-width: 120px;
+    max-height: 35px;
+    width: 100%;
+    height: 100%;
+    background: $color-royal-blue;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: $color-white;
+    padding: 5px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+}

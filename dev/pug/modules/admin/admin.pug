@@ -1,0 +1,7 @@
+.admin
+    .admin__info
+        +img("admin__avatar","general/navAvatar.png")
+        span.admin__name Phillip Mackie
+    ul.admin__settingsList
+        each item in adminMenuItems
+            li= item

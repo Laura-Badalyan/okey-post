@@ -1,0 +1,26 @@
+mixin icon(name,mod)
+    if(mod)
+        svg(class="svg-sprite-icon icon-" + name + ' ' + mod)
+            use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+    else
+    svg(class="svg-sprite-icon icon-" + name)
+        use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+
+mixin img(cl,name,title)
+    if(title)
+        img(class=""+cl src="static/images/"+name title=""+title)
+    else
+        img(class=""+cl src="static/images/"+name title="image")
+
+mixin add_new_item(label)
+    .addBlock__item
+        if label === "Проекты URL"
+            select.addBlock__select
+                option.select__disabledOption(disabled="disabled" selected="selected") Категория
+                each item in selectCategoryOptionItems
+                    option.select__option= item
+            label.addBlock__label= label
+            input.addBlock__input(type="text" placeholder=""+label required)
+        else
+            label.addBlock__label= label
+            input.addBlock__input(type="text" placeholder="" + label required)

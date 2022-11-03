@@ -1,0 +1,25 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1340px;
+  width: 100%;
+  margin-top: 25px;
+  align-items: center;
+  &__logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  &__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+  &__profile{
+  }
+}

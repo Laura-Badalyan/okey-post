@@ -1,0 +1,28 @@
+.dataTable {
+  &__inputBlock {
+    width: 1040px;
+    height: 42px;
+    border-radius: 21px;
+    margin: 0 auto;
+    position: relative;
+    background: $color-selago;
+
+  }
+  &__add{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border: none;
+    background: #F5F7FD;
+    margin: 20px auto;
+    cursor: pointer;
+    font-family: $font-inter;
+    font-weight: $font-weight-bold;
+  }
+  &__table{
+
+  }
+  &__pagination{
+
+  }
+}
