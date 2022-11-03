@@ -1,0 +1,32 @@
+include ../pug/utils/mixins
+block variables
+    -var title = 'Доставка товаров из Великобритании в Россию';
+    -var howToBuy= {pageName: 'Главная  /  Как покупать', title: 'Научим покупать в Великобритании!', discription: 'и экономить до 70%', button: 'Получить адрес в UK'};
+    -var sales= {pageName: 'Главная  /  Распродажи', title: 'Распродажи', discription: 'ранний доступ к распродажам в магазинах', button: 'Получить адрес в UK'};
+    -var prices= {pageName: 'Главная  /  Цены', title: 'Услуги доставки из Великобритании'};
+    -var faq= {pageName: 'Главная  /  Часто задаваемые вопросы', title: 'Отвечаем на вопросы доставки'};
+    -var partnerProgram= {pageName: 'Главная  /  Бонусы и партнёрская программа', title: 'Бонусы и партнёрская программа', description: 'Платим $3 с каждой отправленной посылки', button: 'Начать зарабатывать'};
+    -var blog= {pageName: 'Главная  /  Блог', title: 'Блог'};
+    -var shops= {pageName: 'Главная  /  Популярные магазины', title: 'Популярные магазины'};
+    -var calcTitlesMain = ['OkeyPost удобная и быстрая доставка посылок из Великобритании', 'Рассчитайте стоимость доставки из Англии к вам домой. Мы получим ваши посылки на складе, при необходимости объединим несколько доставок в одну и отправим их к вам надежно упакованными.'];
+    -var calcTitlesPrices = ['Онлайн-калькулятор стоимости доставки товара', 'Задайте необходимые параметры посылки, и калькулятор рассчитает приблизительную стоимость доставки вашей посылки из Англии.'];
+
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        link(rel="shortcut icon" href="img/favicon.png")
+        <!--[if IE]>
+        meta(http-equiv='X-UA-Compatible', content="IE = edge")
+        <![endif]-->
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(name="keywords" content="")
+        link(rel="stylesheet" type='text/css' href="css/style.min.css")
+
+    body
+        .content
+            block content
+        script(src="js/app.js")
+        block script
+

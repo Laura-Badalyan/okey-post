@@ -1,0 +1,54 @@
+.navMenu{
+  display: flex;
+  justify-content: space-between;
+  @include tablet-wide {
+    max-width: 440px;
+    margin: 0 10px;
+  }
+  @include tablet{
+    flex-direction: column;
+    display: none;
+    max-width: 417px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  @media (min-width: 767px) and (max-width: 960px){
+    margin: 0 217px;
+    width: 100%;
+  }
+  @include mobile-wide{
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+  }
+  &__item{
+    list-style-type: none;
+    font-family: $font-gilroy;
+    font-weight: $font-weight-medium;
+    font-size: 15px;
+    text-align: center;
+    @include tablet-wide {
+      font-size: 13px;
+    }
+    @include tablet{
+      padding: 10px 100px;
+    }
+    @media (min-width: 767px) and (max-width: 959px) {
+      padding: 10px 10px;
+    }
+    @include mobile{
+      padding: 10px;
+      width: 100%;
+    }
+  }
+  &__link{
+    text-decoration: none;
+    color: $color-shark;
+
+    &--active{
+      color: $color-picton-blue;
+    }
+  }
+}

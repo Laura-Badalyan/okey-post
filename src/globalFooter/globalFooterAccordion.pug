@@ -1,0 +1,14 @@
+- let globalFooterAccordion = [ { title: 'О компании', textItems: [ { name: 'Услуги ', link: "prices.html" }, { name: 'Цены ', link: "prices.html" }, { name: 'Отзывы ', link: "#feedback__title" }, { name: 'Контакты ', link: "javascript:void(0)" }, { name: 'Вакансии ', link: "javascript:void(0)" }, { name: 'Соглашение о персональных данных ', link: "javascript:void(0)" }, { name: 'Условия использования ', link: "javascript:void(0)" } ] }, { title: 'Полезное', textItems: [ { name: 'Как работает наш сервис ', link: "javascript:void(0)" }, { name: 'Как покупать с оператором ', link: "javascript:void(0)" }, { name: 'Ответы на частые вопросы ', link: "#feedback__title" }, { name: 'Популярные магазины ', link: "javascript:void(0)" }, { name: 'Черный список магазинов ', link: "javascript:void(0)" }, { name: 'Актуальные распродажи ', link: "javascript:void(0)" } ] }, { title: 'Спецпроекты', textItems: [ { name: '50% на первую доставку ', link: "javascript:void(0)" }, { name: 'Скидки для постоянных клиентов ', link: "javascript:void(0)" }, { name: 'Реферальная программа ', link: "#feedback__title" }, { name: 'Кэшбек Mr. Rebates и Rakuten ', link: "javascript:void(0)" }, { name: 'Stop Fraud ', link: "javascript:void(0)" } ] } ]
+
+.globalFooterAccordion
+    .globalFooterAccordion__description.globalFooterAccordionItem
+        .globalFooterAccordionItem__container
+            each val in globalFooterAccordion
+                .globalFooterAccordionItem__item
+                    header.globalFooterAccordionItem__header
+                        h3.globalFooterAccordionItem__title= val.title
+                        .globalFooterAccordionItem__icon.globalFooterAccordionIcon
+                            +icon('globalFooterAccordionIcon__item','downArrow')
+                    .globalFooterAccordionItem__content
+                        each text in val.textItems
+                            a.globalFooterAccordionItem__description(href=''+text.link)= text.name

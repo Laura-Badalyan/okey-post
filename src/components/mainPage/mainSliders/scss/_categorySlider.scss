@@ -1,0 +1,79 @@
+.categorySlider {
+   background: $color-white;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+
+   &__arowBtn {
+      padding: 38px 25px;
+   }
+
+ 
+
+
+
+   &__inner {
+      width: 100%;
+      overflow-x: hidden;
+      position: relative;
+   }
+   
+   &__slides{
+      height: 100px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      transition: $transition;
+      
+   }
+
+   &__slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 17px;
+      padding: 24px;
+      $transition: $transition;
+      cursor: pointer;
+      width: calc(100% / 6);
+      position: absolute;
+      transition: all .5s;
+
+      @media(max-width:1400px) {
+         width: 20%;
+      }
+
+     @include tablet-wide {
+         width: 25%;
+
+      }
+
+      @include tablet {
+         width: calc(100% / 3);
+      };
+
+      @media(max-width:780px) {
+         width: 100%;
+
+      }
+      &:hover,
+      &_active {
+         background: #F2F6FC;
+      }
+   }
+
+   &__slideImg {
+      @include svg(52px, 52px, $color-caribbean-green);
+      min-width: 52px;
+
+      @media(max-width:1400px) {
+         width: 32px;
+         min-width: 32px;
+      }
+   }
+
+   &__slidetext {
+      font-weight: $font-weight-bold;
+      font-size: 16px;
+   }
+}

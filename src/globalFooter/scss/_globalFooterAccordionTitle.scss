@@ -1,0 +1,52 @@
+.globalFooterAccordionTitle {
+
+  &__accent {
+    color: $color-picton-blue;
+  }
+
+  &__bg {
+    position: absolute;
+    left: -42px;
+    top: -8px;
+    @include tablet {
+      position: absolute;
+      left: -13px;
+      top: -8px;
+    }
+    @include mobile-wide {
+      left: -4px;
+      top: -19px;
+    }
+    @include mobile {
+      left: -4px;
+      top: -19px;
+    }
+
+    svg {
+      width: 412px;
+      margin-left: auto;
+      margin-right: auto;
+
+      display: block;
+      @include tablet {
+        width: 301px;
+      }
+      @include mobile-wide {
+        width: 236px;
+      }
+      @include mobile {
+        width: 197px;
+      }
+    }
+
+    path {
+      stroke-width: 2px;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}

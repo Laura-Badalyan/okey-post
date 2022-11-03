@@ -1,0 +1,43 @@
+.navMobile {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: transparent;
+  transition: background .5s ease-out;
+  @include tablet {
+    display: block;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 24px 0 0 41px;
+  }
+  &__show {
+    box-sizing: border-box;
+    border-radius: 0 0 64px 64px;
+    background: $color-white;
+    @include tablet {
+      border-radius: 0 0 32px 32px;;
+    }
+    @include mobile {
+      border-radius: 0 0 24px 24px;;
+    }
+  }
+  &__navigation {
+    max-height: 40px;
+  }
+  &__menu {
+    margin-left: auto;
+    margin-right: 28px;
+  }
+  &__buttonBurger {
+    float: right;
+    @include mobile {
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+  }
+
+}

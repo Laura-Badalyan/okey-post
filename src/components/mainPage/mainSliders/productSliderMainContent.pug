@@ -1,0 +1,32 @@
+.productSlider__mainContent
+    .productSlider__infoBlock.infoBlock.infoBlock1
+        h4.infoBlock__text.productSlider__boldText Columbia Barlow Pass 550 Turbodown Jacket
+        .infoBlock__priceBox
+            .infoBlock__flagImg 
+                +image('infoBlock__flagImg','rusFlag.png')
+            .infoBlock__priceTexts
+                p.infoBlock__priceText Цена в России
+                h4.infoBlock__priceVal.productSlider__boldText 7891,46₽
+    .productSlider__sliderWrapper
+        .productSlider__sliderInner
+            .productSlider__slides
+                .productSlider__slide
+                    img.productSlider__slideImg(src="img/clothes1.png", alt="")
+                .productSlider__slide
+                    img.productSlider__slideImg(src="img/clothes2.png", alt="")
+                .productSlider__slide
+                    img.productSlider__slideImg(src="img/clothes3.png", alt="")
+        button.sliders__arowBtn.productSlider__arrowBtn.productSlider__mainLeftBtn.productSlider__leftBtn 
+            +icon('sliders__arrowIcon productSlider__arrowIcon','prevArrow')
+        button.sliders__arowBtn.productSlider__arrowBtn.productSlider__mainRightBtn.productSlider__rightBtn 
+            +icon('sliders__arrowIcon productSlider__arrowIcon','nextArrow')   
+    .productSlider__infoBlock.infoBlock.infoBlock2
+        h4.infoBlock__text.productSlider__boldText 
+            | Доставка одежды из Великобритании  от 
+            span.greenText £7.79
+        .infoBlock__priceBox
+            .infoBlock__flagImg 
+                +image('infoBlock__flagImg','engFlag.png')
+            .infoBlock__priceTexts
+                p.infoBlock__priceText Цена в UK
+                h4.infoBlock__priceVal.greenText.productSlider__boldText £80.62

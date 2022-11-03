@@ -1,0 +1,117 @@
+.contentItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 22px;
+  box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+  border-radius: 16px;
+  margin: 0 auto;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+&__arrows{
+  @media (min-width: 961px) {
+    display: none;
+  }
+}
+  &__pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__itemDescription {
+    display: flex;
+    align-items: center;
+  }
+
+  &__description {
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 27px;
+    text-transform: uppercase;
+    padding-right: 5px;
+    @include tablet-wide {
+      font-size: 14px;
+    }
+
+  }
+
+  &__icon {
+    @include svg(52px, 52px, $color-shark)
+  }
+
+  &__dates {
+    border-left: 1px solid $color-heather;
+    min-width: 210px;
+    padding: 17px 0;
+    width: 100%;
+    text-align: center;
+    @include tablet-wide {
+      min-width: 150px;
+    }
+    @include tablet {
+      border: none;
+    }
+  }
+
+  &__deliveryPrice {
+    border-left: 1px solid $color-heather;
+    min-width: 210px;
+    padding: 17px 0;
+    width: 100%;
+    text-align: center;
+    @include tablet-wide {
+      min-width: 150px;
+    }
+    @include tablet {
+      border: none;
+    }
+  }
+
+  &__finalPrice {
+    border-left: 1px solid $color-heather;
+    border-right: 1px solid $color-heather;
+    min-width: 210px;
+    padding: 17px 0;
+    width: 100%;
+    text-align: center;
+    @include tablet-wide {
+      min-width: 150px;
+    }
+    @include tablet {
+      border: none;
+    }
+  }
+
+  &__arrowIcon {
+    @include svg(18px, 18px, $color-shark);
+    margin-left: 16px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__mobileArrowIcon {
+    @include svg(18px, 18px, $color-shark);
+    margin-left: 16px;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: $font-weight-regular;
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 16px;
+    font-weight: $font-weight-bold;
+  }
+}

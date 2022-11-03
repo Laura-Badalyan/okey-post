@@ -1,0 +1,49 @@
+.mainFeatures {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-white;
+  margin-bottom: 160px;
+  border-radius: 16px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  @include mobile-wide {
+    border-radius: 10px;
+  }
+
+  &_item {
+    padding: 33px 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    @include tablet-wide {
+      display: flex;
+      flex-basis: 50%;
+      justify-content: start;
+    }
+    @include mobile-wide {
+      flex-basis: 100%;
+    }
+  }
+
+  &_item:not(:last-child) {
+    border-right: 1px solid $color-heather;
+    @include tablet-wide {
+      border: none;
+    }
+  }
+
+  &_itemImg {
+    margin-right: 16px;
+  }
+
+  &_itemText {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    @include tablet-wide {
+      font-size: 16px;
+    }
+  }
+}

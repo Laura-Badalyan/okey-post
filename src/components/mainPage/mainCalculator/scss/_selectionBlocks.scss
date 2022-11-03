@@ -1,0 +1,58 @@
+.selectionBlocks {
+  font-family: $font-gilroy;
+  display: flex;
+  flex-direction: column;
+  max-width: 246px;
+  width: 100%;
+  color: $color-mine-shaft;
+  margin: 0 12px;
+  @include tablet {
+    max-width: 500px;
+  }
+
+  &__label {
+    font-weight: $font-weight-bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 46px;
+  }
+
+  &__select {
+    box-sizing: border-box;
+    border: none;
+    padding: 19px 0 19px 15px;
+    max-width: 220px;
+    width: 100%;
+    @include tablet {
+      max-width: 500px;
+    }
+
+    &:active {
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    border: none;
+    padding: 20px 0 20px 15px;
+    max-width: 220px;
+    width: 100%;
+
+    &:active {
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    @include svg(26px, 26px, $color-mine-shaft)
+  }
+}

@@ -1,0 +1,27 @@
+-var mainDeliveryOptions = [{icon:'post', description:'Почта России', dates: '10-14 дней', deliveryPrice:'от £27.00', totalPrice:'£41.99'},{icon:'emsPost', description:'EMS Почта России', dates: '9-12 дней', deliveryPrice:'от £40.00', totalPrice:'£54.55'},{icon:'littlePackages', description:'Почта России мелкие пакеты', dates: '10-14 дней', deliveryPrice:'от £13.00', totalPrice:'£90.50'},]
+
+
+
+.mainDeliveryOptions
+    h3.mainDeliveryOptions__title Варианты доставки:
+    .mainDeliveryOptions__block.mainDeliveryOptionsAccordionItem
+        .mainDeliveryOptionsItem__container
+            each val in mainDeliveryOptions
+                .mainDeliveryOptions__content.contentItem
+                    .contentItem__itemDescription
+                        +icon('contentItem__icon', val.icon)
+                        h3.contentItem__description= val.description
+                        .contentItem__arrows
+                            +icon('contentItem__mobileArrowIcon', 'downArrow')
+                    .contentItem__pricing
+                        .contentItem__dates
+                            p.contentItem__label Сроки:
+                            p.contentItem__text= val.dates
+                        .contentItem__deliveryPrice
+                            p.contentItem__label Стоимость доставки:
+                            p.contentItem__text= val.deliveryPrice
+                        .contentItem__finalPrice
+                            p.contentItem__label Итого:
+                            p.contentItem__text= val.totalPrice
+                        .contentItem__arrows
+                            +icon('contentItem__arrowIcon', 'downArrow')

@@ -1,0 +1,11 @@
+.socialLinks {
+  display: flex;
+  @include tablet {
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+  }
+  @include mobile {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,7 @@
+-var services= [{name: 'Дополнительное страxование ', price: '5% от суммы на которую xотите застраxовать'}, {name: 'Почта России и ЕМС', price: 'Застраxовано по умолчанию на £50.00'}, {name: 'Мелкие пакеты', price: 'Застраxовано на £20.00'}]
+
+.Insurance
+    h3.Insurance__title.serviceTitle Страхование
+    .Insurance__serviceDescBlock.storeServices
+        each service in services
+            +service(service.name, service.price, false)

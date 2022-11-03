@@ -1,0 +1,32 @@
+extends pug/main
+block content
+    .container
+        include globalNavigation/globalNavigation
+    +headerMixin(prices,false,false)
+    .container  
+        include components/prices/pricesServices/pricesServices
+    .container
+        +calcTitleItems(calcTitlesPrices)
+    .container
+        include components/mainPage/mainDeliveryOptions/mainDeliveryOptions
+    .container
+        include components/prices/store
+    .container
+        include components/prices/buyWithOperators/buyWithOperators
+    .container-fluid.mainOrder--bg
+        .container
+            include components/prices/pricesOrder/pricesOrder
+    .container
+        include components/prices/Insurance
+    .container
+        include components/prices/package
+    .container-fluid.globalSocialBlock--bg
+        .container
+            include globalSocialBlock/globalSocialBlock
+    .container
+        include globalFooter/globalFooter
+        include globalFooter/globalFooterAccordion
+    .container-fluid.globalFooter--border
+        include globalFooter/globalFooterBorder
+block script
+    script(src="js/prices.js")

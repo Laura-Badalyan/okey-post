@@ -1,0 +1,198 @@
+.mainHeader {
+  overflow: hidden;
+  font-family: $font-gilroy;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  @media(max-width: 1600px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include mobile {
+    padding: 20px 15px;
+  }
+
+  &_textBlock {
+    width: 50%;
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &_title {
+    font-size: 72px;
+    font-weight: 800;
+    color: $color-white;
+    margin: 0;
+    @media(max-width: 1600px) and (min-width: 1200px) {
+      font-size: 55px;
+    }
+    @include tablet-wide {
+      font-size: 48px;
+    }
+    @media(max-width: 1024px) {
+      font-size: 40px;
+    }
+    @include mobile-wide {
+      font-size: 30px;
+    }
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+
+  &_details {
+    font-size: 20px;
+    line-height: 42px;
+    color: $color-white;
+    max-width: 707px;
+    width: 100%;
+    @include tablet-wide {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+
+  &_orderBtn {
+    @include tablet {
+      margin-bottom: 36px;
+    }
+    @include mobile {
+      margin: 15px;
+      padding: 24px 20px;
+    }
+  }
+
+  &_animation {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &_animationBack {
+    width: 100%;
+    @include tablet-wide {
+      max-width: 450px;
+      width: 100%;
+    }
+    @include mobile-wide {
+      max-width: 410px;
+    }
+  }
+
+  &_animationMan {
+    position: absolute;
+    right: 40px;
+    top: 112px;
+    max-width: 400px;
+    width: 100%;
+    animation: pulse 1.5s ease;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+    @include tablet-wide {
+      max-width: 348px;
+      width: 100%;
+    }
+    @include mobile-wide {
+      max-width: 308px;
+      right: 64px;
+      top: 110px;
+      animation: pulseMob 1.5s ease;
+      animation-delay: 1.5s;
+      animation-fill-mode: both;
+
+    }
+    @media(max-width: 560px) {
+      max-width: 230px;
+    }
+
+    @media(max-width: 380px) {
+      max-width: 160px;
+
+    }
+  }
+
+  &_animationPlane {
+    position: absolute;
+    right: 120px;
+    top: 30px;
+    max-width: 170px;
+    width: 100%;
+    animation-name: plane;
+    animation-duration: 7s;
+    @include tablet-wide {
+      max-width: 140px;
+      width: 100%;
+    }
+    @include mobile-wide {
+      max-width: 110px;
+    }
+    @media(max-width: 380px) {
+      max-width: 90px;
+      right: 80px;
+      animation-name: planeMob;
+      animation-duration: 7s;
+    }
+  }
+
+  &--bg {
+    background-image: linear-gradient(to right, $color-butterfly-bush 0%, $color-picton-blue 100%);
+    border-radius: 36px;
+    margin: 0 0 160px 0;
+  }
+
+  &_parallax {
+
+  }
+
+  @keyframes plane {
+    0% {
+      right: 0;
+      top: 30px;
+    }
+    25% {
+      right: 120px;
+      top: 30px;
+    }
+  }
+  @-webkit-keyframes pulse {
+    from {
+      transform: scale(0);
+      top: -100px;
+    }
+    to {
+      transform: scale(1);
+      top: 112px;
+    }
+  }
+  //animation for mobile
+  @-webkit-keyframes pulseMob {
+    from {
+      transform: scale(0);
+      top: -40px;
+    }
+    to {
+      transform: scale(1);
+      top: 110px;
+    }
+  }
+  @keyframes planeMob {
+    0% {
+      right: 0;
+      top: 30px;
+    }
+    25% {
+      right: 80px;
+      top: 30px;
+    }
+  }
+}

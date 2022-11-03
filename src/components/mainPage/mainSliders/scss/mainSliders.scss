@@ -1,0 +1,19 @@
+.sliders {
+   margin-bottom: 160px;
+
+   &__title {
+      margin-bottom: 40px
+   }
+
+   &__arrowIcon {
+      @include svg(25px, 15px, $color-caribbean-green)
+   }
+
+   &__arowBtn {
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding: 38px 25px;
+   }
+}
+

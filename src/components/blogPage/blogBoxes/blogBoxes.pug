@@ -1,0 +1,18 @@
+-let blogArr = [{text: "Интернет-магазин Urban Outfitters в UK: обзор"}, {text: "Overstock. Брендовые товары по доступным ценам"}, {text: "Skechers с Amazon. Удобная обувь для всей семьи"}, {text: "16 лучших подарков с Амазона в 2021 году"}, {text: "Target — семейный супермаркет с ценами от 300 рублей!"}, {text: "Английский магазин RIPNDIP. Покупаем самовыражение"}, {text: "Nautica. Элитные товары из Англии по низким ценам"}, {text: "Forever 21 - покупаем джинсы за 1 500 рублей"}, {text: "Как купить кроссовки Balenciaga на 30 000 рублей дешевле?"}, {text: "Топ-7 самых дорогих сумок Louis Vuitton"}, {text: "BH Cosmetics Galaxy. Галактика красоты и ухода "}, {text: "“Вансы”. Крутые кеды, которые не выйдут из моды никогда!"}, {text: "Интернет-магазин Urban Outfitters в UK: обзор"}, {text: "Overstock. Брендовые товары по доступным ценам"}, {text: "Skechers с Amazon. Удобная обувь для всей семьи"}, {text: "16 лучших подарков с Амазона в 2021 году"}, {text: "Target — семейный супермаркет с ценами от 300 рублей!"}, {text: "Английский магазин RIPNDIP. Покупаем самовыражение"}, {text: "Nautica. Элитные товары из Англии по низким ценам"}, {text: "Forever 21 - покупаем джинсы за 1 500 рублей"}, {text: "Как купить кроссовки Balenciaga на 30 000 рублей дешевле?"}, {text: "Топ-7 самых дорогих сумок Louis Vuitton"}, {text: "BH Cosmetics Galaxy. Галактика красоты и ухода "}, {text: "“Вансы”. Крутые кеды, которые не выйдут из моды никогда!"}, {text: "Интернет-магазин Urban Outfitters в UK: обзор"}, {text: "Overstock. Брендовые товары по доступным ценам"}, {text: "Skechers с Amazon. Удобная обувь для всей семьи"}, {text: "16 лучших подарков с Амазона в 2021 году"}, {text: "Target — семейный супермаркет с ценами от 300 рублей!"}, {text: "Английский магазин RIPNDIP. Покупаем самовыражение"}, {text: "Nautica. Элитные товары из Англии по низким ценам"}, {text: "Forever 21 - покупаем джинсы за 1 500 рублей"}, {text: "Как купить кроссовки Balenciaga на 30 000 рублей дешевле?"}, {text: "Топ-7 самых дорогих сумок Louis Vuitton"}, {text: "BH Cosmetics Galaxy. Галактика красоты и ухода "}, {text: "“Вансы”. Крутые кеды, которые не выйдут из моды никогда!"},];
+
+.blogBoxes
+    each val,i in blogArr
+        - var num = i + 1
+        .blogBoxes__item.shadow-box
+            .blogBoxes__itemImgBlock
+                +image('blogBoxes__itemImg','blog' + num + '.jpg')
+            .blogBoxes__textBlock
+                h4.blogBoxes__itemTitle= val.text
+                .blogBoxes__itemDateBlock
+                    span.blogBoxes__itemDate 22.10.2021
+                    span.blogBoxes__itemTime
+                        +icon('blogBoxes__clockIcon','clockIcon' )
+                        | Читать: 8 минут
+
+
+// blogBoxes start

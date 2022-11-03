@@ -1,0 +1,39 @@
+extends pug/main
+block content
+    .container
+        include globalNavigation/globalNavigation
+    .container-fluid.mainHeader--bg
+        .container
+            include components/mainPage/mainHeader/mainHeader
+    .container
+        include components/mainPage/mainSliders/mainSliders
+    .container
+        include components/mainPage/mainFeatures/mainFeatures
+    .container-fluid.mainOrder--bg
+        .container
+            include components/mainPage/mainOrder/mainOrder
+    .container
+        +calcTitleItems(calcTitlesMain)
+    .container
+        include components/mainPage/mainDeliveryOptions/mainDeliveryOptions
+    .container
+        include components/mainPage/mainSteps/mainSteps
+    .container-fluid.mainOrder--bg
+        .container
+            include components/mainPage/mainOrderSecond/mainOrderSecond
+    .container
+        include components/mainPage/mainClientTopics/mainClientTopic
+    .container
+        include components/mainPage/mainFeedback/mainFeedback
+    .container
+        include components/mainPage/mainAddress/mainAddress
+    .container-fluid.mainOrder--bg
+        .container
+            include components/mainPage/mainSubscribtion/mainSubscribtion
+    .container
+        include globalFooter/globalFooter
+        include globalFooter/globalFooterAccordion
+    .container-fluid.globalFooter--border
+        include globalFooter/globalFooterBorder
+block script
+    script(src="js/main.js")

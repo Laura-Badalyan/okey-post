@@ -1,0 +1,21 @@
+.infoBlock {
+    max-width: 338px;
+    
+    &__priceBox {
+        border-radius: $small-radius;
+        background-color: $color-link-water;
+        padding: 33px;
+        display: flex;
+        gap: 28px;
+    }
+
+    &__flagImg {
+        width: 75px;
+    }
+
+    &__priceText {
+        font: 18px 400 $font-gilroy;
+        line-height: 24px;
+        color: $color-shark;
+    }
+}

@@ -1,0 +1,156 @@
+// @mixin tablet-wide-height {
+//     @media (max-width: 1200px) {
+//         height: ;
+//     }
+// }
+
+.productSlider {
+    margin: 54px 0 33px;
+
+    &__boldText {
+        font: 700 26px $font-gilroy;
+        line-height: 36px;
+        color: $color-shark;
+    }
+
+    &__mainContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        @include tablet-wide {
+            flex-direction: column;
+        }
+    }
+
+    &__infoBlock.infoBlock1 {
+        @include tablet-wide {
+            order: 2;
+        }
+    }
+
+    &__infoBlock.infoBlock2 {
+        @include tablet-wide {
+            order: 3;
+        }
+    }
+
+    &__sliderWrapper {
+        background-image: url(../img/productSliderBg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        width: calc(100% - 100px);
+        position: relative;
+
+        @include tablet {
+            order: 1;
+        }
+
+        @include mobile {
+            width: calc(100% - 70px);
+
+        }
+    }
+
+    &__arrowBtn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+
+        @include tablet-wide {
+            display: block;
+        }
+    }
+
+    &__mainLeftBtn {
+        left: -60px;
+    }
+
+    &__mainRightBtn {
+        right: -60px;
+    }
+
+    &__sliderInner {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    &__slides {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 450px;
+    }
+
+    &__slide {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: $transition;
+    }
+
+    &__slideImg {
+        width: calc(100% - 30px);
+        height: 400px;
+        object-fit: contain;
+    }
+
+
+    &__footerContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    &__footerBtn {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        @include tablet-wide {
+            display: none;
+        }
+    }
+
+    &__footerImgBlock {
+        background-image: url(../img/productSliderBg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        padding: 8px;
+        overflow: hidden;
+
+    }
+
+    &__footerImg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__footerTextBlock {
+        text-align: center;
+        margin: 0 auto; 
+    }
+
+    &__footerTermText {}
+
+    &__footerPriceText {}
+
+}

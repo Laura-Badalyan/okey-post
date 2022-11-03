@@ -1,0 +1,56 @@
+mixin icon(className,name,mod)
+    if(mod)
+        svg(class= className + " " + mod)
+            use(xlink:href="img/icons/icons.svg#" + name)
+    else
+        svg(class= className)
+            use(xlink:href="img/icons/icons.svg#" + name)
+mixin image(cl,name,title)
+    if(title)
+        img(class="" + cl src="img/" + name title="" + title)
+    else
+        img(class="" + cl src="img/" + name title="image")
+
+mixin headerMixin(selObj,isDescription,isBtn)
+    .container-fluid.pageHeader--bg
+        .container
+            .pageHeader
+                p.pageHeader__name= selObj.pageName
+                h1.pageHeader__title= selObj.title
+                if(isDescription)
+                    p.pageHeader__desc= selObj.discription
+                if(isBtn)
+                    button.pageHeader__button.btn= selObj.button
+
+mixin pageBtns(ispPink)
+    if(ispPink)
+        .globalPageBtns
+            button.globalPageBtns__btn_pink.globalPageBtns__btn.globalPageBtns__arrowLeftBtn ←
+            button.globalPageBtns__btn_pink.globalPageBtns__btn.globalPageBtns__numBtn.globalPageBtns__numBtn_active 1
+            button.globalPageBtns__btn_pink.globalPageBtns__btn.globalPageBtns__numBtn 2
+            button.globalPageBtns__btn_pink.globalPageBtns__btn.globalPageBtns__numBtn 3
+            button.globalPageBtns__btn_pink.globalPageBtns__btn.globalPageBtns__arrowRightBtn →
+    else 
+        .globalPageBtns
+            button.globalPageBtns__btn_green.globalPageBtns__btn.globalPageBtns__arrowLeftBtn ←
+            button.globalPageBtns__btn_green.globalPageBtns__btn.globalPageBtns__numBtn.globalPageBtns__numBtn_active 1
+            button.globalPageBtns__btn_green.globalPageBtns__btn.globalPageBtns__numBtn 2
+            button.globalPageBtns__btn_green.globalPageBtns__btn.globalPageBtns__numBtn 3
+            button.globalPageBtns__btn_green.globalPageBtns__btn.globalPageBtns__arrowRightBtn →
+mixin calcTitleItems(calcitem)
+    .mainCalculator
+        h3.mainCalculator__title= calcitem[0]
+        p.mainCalculator__description= calcitem[1]
+        include ../../components/mainPage/mainCalculator/mainCalculator
+
+mixin service(name, price, desc, isDesc)
+        if(isDesc)
+            .store__serviceItem.serviceItem
+                .serviceItem__desc.store__desc--fullWidth
+                    span.serviceItem__name= name
+                    span.serviceItem__elaboration= desc
+                span.serviceItem__price= price
+        else
+            .store__serviceItem.serviceItem
+                span.serviceItem__desc= name
+                span.serviceItem__price= price

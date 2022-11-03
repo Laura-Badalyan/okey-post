@@ -1,0 +1,121 @@
+.howToBuy {
+    &__title {
+        font-family: $font-gilroy;
+        font-weight: $font-weight-bolder;
+        font-size: 44px;
+        line-height: 56px;
+        color: $color-shark;
+        max-width: 695px;
+        width: 100%;
+
+        @include mobile-wide {
+            font-size: 35px;
+        }
+    }
+
+    &__info {
+        font-family: $font-gilroy;
+        font-weight: $font-weight-regular;
+        font-size: 18px;
+        padding: 50px 0;
+        line-height: 36px;
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 55px;
+        gap:70px;
+
+        @include mobile-wide{
+            flex-direction: column;
+
+        }
+
+
+    }
+
+    &__buyimg {
+        max-width: 200px;
+        width: 100%;
+        @include  tablet{
+            object-fit: contain;
+        }
+        @include mobile-wide{
+            margin: 0 auto;
+        }
+    }
+
+    &__content {
+    }
+    .howToBuyContent{
+        &__item{
+            display: flex;
+            flex-direction: column;
+        }
+        &__wrapper{
+            display: flex;
+
+           @include tablet{
+            flex-direction: column;
+            align-items: center;
+           }
+
+        }
+    }
+
+
+    &__count {
+        font-family: $font-gilroy;
+        font-weight: $font-weight-regular;
+        font-size: 80px;
+        line-height: 56px;
+        color: $color-caribbean-green;
+        margin-right: 36px;
+        &:after{
+            content:"|";
+            color:$color-heather;
+            margin: 0 45px;
+            @include  tablet{
+                margin: 0 20px;
+            }
+
+        }
+        @include  tablet{
+            margin: 0 auto;
+        }
+    }
+
+    &__datatitle {
+        font-family: $font-gilroy;
+        font-weight: $font-weight-bold;
+        max-width: 353px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 12px;
+        @include tablet{
+            margin-top: 10px;
+        }
+    }
+
+    &__dataInfo {
+        max-width: 1030px;
+        width: 100%;
+        font-family: $font-gilroy;
+        font-weight:$font-weight-regular;
+        font-size: 18px;
+        line-height: 36px;
+        color:$color-shark;
+    }
+
+    &__button{
+        margin-bottom: 40px;
+
+        @include mobile-wide{
+          display: flex;
+          justify-content: center;
+        }
+    }
+
+
+}

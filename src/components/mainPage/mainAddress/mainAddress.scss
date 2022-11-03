@@ -1,0 +1,18 @@
+.mainAddress{
+  font-family: $font-gilroy;
+  font-weight: $font-weight-regular;
+  font-size: 18px;
+  padding: 50px 0;
+  line-height: 36px;
+  margin: 150px 0;
+  &__heading{
+    font-size: 44px;
+    font-weight: $font-weight-bolder;
+    @include mobile {
+      font-size: 38px;
+    }
+  }
+  &__context{
+    color: $color-shark;
+  }
+}
