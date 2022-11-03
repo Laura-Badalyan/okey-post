@@ -1,0 +1,32 @@
+-
+    var pricesServices = [{
+        title: 'Ваш личный адрес для покупок',
+        text: 'на нашем современном автоматизированном складе в безналоговом Делавэре',
+        imgSrc: 'pricesServices1.png',
+        btnText: 'Бесплатно',
+    },{
+        title: 'Объединение нескольких посылок в одну',
+        text: 'ведь часто отправлять несколько посылок в одной коробке гораздо выгоднее, чем по одной',
+        imgSrc: 'pricesServices2.png',
+        btnText: 'от £10.00',
+    },{
+        title: 'Усиленная упаковка по запросу',
+        text: 'Мы дополнительно упакуем вашу посылку в пленку, коробку с двойными стенками.',
+        imgSrc: 'pricesServices3.png',
+        btnText: 'от £0.25',
+    },{
+        title: 'Хранение входящих посылок 30 дней',
+        text: 'чем больше срок хранения посылок на складе – тем больше вы сможете собрать',
+        imgSrc: 'pricesServices4.png',
+        btnText: 'Бесплатно',
+    },]
+
+.pricesServices
+    each item in pricesServices
+        .pricesServices__item 
+            .pricesServices__ImgBlock
+                +image('pricesServices__Img',item.imgSrc)
+            h3.pricesServices__itemTitle= item.title
+            p.pricesServices__itemText= item.text
+            button.pricesServices__btn= item.btnText 
+    

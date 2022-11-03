@@ -1,0 +1,18 @@
+- let categorySlidesArr=[{icon:"Clothes",text:"Одежда"},{icon:"Electronics",text:"Электроника"},{icon:"Accessories",text:"Аксессуары"},{icon:"ForChild",text:"Для детей"},{icon:"Sport",text:"Для спорта"},{icon:"Cosmetics",text:"Косметика"},];
+
+
+.categorySlider.shadow-box
+   button.categorySlider__arowBtn.sliders__arowBtn.categorySlider__arrowLeftBtn 
+      +icon('categorySlider__arrowIcon sliders__arrowIcon','prevArrow')
+   .categorySlider__inner
+      .categorySlider__slides
+         each val in categorySlidesArr
+            .categorySlider__slide(data-filter = val.icon)
+               +icon('categorySlider__slideImg','slider' + val.icon)
+               span.categorySlider__slidetext= val.text
+         each val in categorySlidesArr
+            .categorySlider__slide(data-filter = val.icon)
+               +icon('categorySlider__slideImg','slider' + val.icon)
+               span.categorySlider__slidetext= val.text
+   button.sliders__arowBtn.categorySlider__arowBtn.categorySlider__arrowRightBtn 
+      +icon('categorySlider__arrowIcon sliders__arrowIcon','nextArrow')

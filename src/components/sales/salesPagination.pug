@@ -1,0 +1,147 @@
+-
+    let salesItems = [
+        {
+            header: "Abercrombie & Fitch",
+            description: "цены от <span>£7.99 (3365₽)</span> разделе: <br> мужские вещи: <a href='#'>CLEARANCE</a><br> женские вещи: <a href='#'>CLEARANCE</a><br><br>качественные детские вещи на <a href='#'>Abercrombie kids<br></a>",
+            link: "<br>Только выкуп с оператором →"
+        },
+        {
+            header: "Timberland",
+            description: "NEW!<br> Коллаб <a href='#'>Tommy Hilfiger x Timberland!</a><br><br>Ботинки от <span>£7.99 (3365₽)</span> <br>Зимние шапки за <span>£7.99 (3365₽)</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Polo Ralph Lauren",
+            description: "<a href='#'>Рубашка</a> за <span>£7.99 (3365₽)</span><br> <a href='#'>Худи</a> за <span>£7.99 (3365₽)</span><br><a href='#'>Свитшот с лого</a> за <span>£7.99 (3365₽)</span><br>До - <span>40%</span> в разделе SALE",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Hollister Co.",
+            description: "цены от <span>£7.99 (3365₽)</span> разделе: <br> мужские вещи: <a href='#'>CLEARANCE</a><br> женские вещи: <a href='#'>CLEARANCE</a>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Michael Kors",
+            description: "<span>Новая коллекция!<br>Michael Kors x 007 (James Bond)<br>HOLIDAY HEAD START - 60%</span> на сумки, обувь и одежду",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Аутлет Saks OFF 5TH",
+            description: "<span>Black Friday Early Access</span> Брендовые шапки, шарфы и перчатки - <span>60% OFF</span><br>Shop Pajar, Sorel, UGG, Calvin Klein Jeans, Tommy Hilfiger",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Victoria's Secret",
+            description: "<span>Лосьоны и мисты за £7.99 (3365₽) 7 трусиков за £7.99 (3365₽)</span> Халаты за <span>£7.99 (3365₽)<br>Потрать £7.99 (3365₽)</span> - получи <span>купон на $25</span> на следующий заказ",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "levi.com",
+            description: "<a href='#'>Джинсы</a> от <span>£7.99 (3365₽)<br><br>Скидка 30% на заказы от $100 с кодом TREAT30</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "UGG® - вход с VPN",
+            description: "Угги за <span>£7.99 (3365₽)</span> Ботинки UGG от <span>£7.99 (3365₽)</span> в разделе <a href='#'>SALE<br>Мужские угги</a> за <span>£7.99 (3365₽)</span> <a href='#'>Слипперы</a> за <span>£7.99 (3365₽)</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "New Balance",
+            description: "<span>Вход с VPN</span> - <span>30%</span> на некоторые модели <span>Бесплатная</span> доставка <span>$50+</span>",
+            link: "<br>Только выкуп с оператором →"
+        },
+        {
+            header: "Abercrombie & Fitch",
+            description: "цены от <span>£7.99 (3365₽)</span> разделе: <br> мужские вещи: <a href='#'>CLEARANCE</a><br> женские вещи: <a href='#'>CLEARANCE</a><br><br>качественные детские вещи на <a href='#'>Abercrombie kids<br></a>",
+            link: "<br>Только выкуп с оператором →"
+        },
+        {
+            header: "Timberland",
+            description: "NEW!<br> Коллаб <a href='#'>Tommy Hilfiger x Timberland!</a><br><br>Ботинки от <span>£7.99 (3365₽)</span> <br>Зимние шапки за <span>£7.99 (3365₽)</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Polo Ralph Lauren",
+            description: "<a href='#'>Рубашка</a> за <span>£7.99 (3365₽)</span><br> <a href='#'>Худи</a> за <span>£7.99 (3365₽)</span><br><a href='#'>Свитшот с лого</a> за <span>£7.99 (3365₽)</span><br>До - <span>40%</span> в разделе SALE",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Hollister Co.",
+            description: "цены от <span>£7.99 (3365₽)</span> разделе: <br> мужские вещи: <a href='#'>CLEARANCE</a><br> женские вещи: <a href='#'>CLEARANCE</a>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Michael Kors",
+            description: "<span>Новая коллекция!<br>Michael Kors x 007 (James Bond)<br>HOLIDAY HEAD START - 60%</span> на сумки, обувь и одежду",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Аутлет Saks OFF 5TH",
+            description: "<span>Black Friday Early Access</span> Брендовые шапки, шарфы и перчатки - <span>60% OFF</span><br>Shop Pajar, Sorel, UGG, Calvin Klein Jeans, Tommy Hilfiger",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Victoria's Secret",
+            description: "<span>Лосьоны и мисты за £7.99 (3365₽) 7 трусиков за £7.99 (3365₽)</span> Халаты за <span>£7.99 (3365₽)<br>Потрать £7.99 (3365₽)</span> - получи <span>купон на $25</span> на следующий заказ",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "levi.com",
+            description: "<a href='#'>Джинсы</a> от <span>£7.99 (3365₽)<br><br>Скидка 30% на заказы от $100 с кодом TREAT30</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "UGG® - вход с VPN",
+            description: "Угги за <span>£7.99 (3365₽)</span> Ботинки UGG от <span>£7.99 (3365₽)</span> в разделе <a href='#'>SALE<br>Мужские угги</a> за <span>£7.99 (3365₽)</span> <a href='#'>Слипперы</a> за <span>£7.99 (3365₽)</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "New Balance",
+            description: "<span>Вход с VPN</span> - <span>30%</span> на некоторые модели <span>Бесплатная</span> доставка <span>$50+</span>",
+            link: "<br>Только выкуп с оператором →"
+        },
+        {
+            header: "Abercrombie & Fitch",
+            description: "цены от <span>£7.99 (3365₽)</span> разделе: <br> мужские вещи: <a href='#'>CLEARANCE</a><br> женские вещи: <a href='#'>CLEARANCE</a><br><br>качественные детские вещи на <a href='#'>Abercrombie kids<br></a>",
+            link: "<br>Только выкуп с оператором →"
+        },
+        {
+            header: "Timberland",
+            description: "NEW!<br> Коллаб <a href='#'>Tommy Hilfiger x Timberland!</a><br><br>Ботинки от <span>£7.99 (3365₽)</span> <br>Зимние шапки за <span>£7.99 (3365₽)</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Polo Ralph Lauren",
+            description: "<a href='#'>Рубашка</a> за <span>£7.99 (3365₽)</span><br> <a href='#'>Худи</a> за <span>£7.99 (3365₽)</span><br><a href='#'>Свитшот с лого</a> за <span>£7.99 (3365₽)</span><br>До - <span>40%</span> в разделе SALE",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Hollister Co.",
+            description: "цены от <span>£7.99 (3365₽)</span> разделе: <br> мужские вещи: <a href='#'>CLEARANCE</a><br> женские вещи: <a href='#'>CLEARANCE</a>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Michael Kors",
+            description: "<span>Новая коллекция!<br>Michael Kors x 007 (James Bond)<br>HOLIDAY HEAD START - 60%</span> на сумки, обувь и одежду",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Аутлет Saks OFF 5TH",
+            description: "<span>Black Friday Early Access</span> Брендовые шапки, шарфы и перчатки - <span>60% OFF</span><br>Shop Pajar, Sorel, UGG, Calvin Klein Jeans, Tommy Hilfiger",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "Victoria's Secret",
+            description: "<span>Лосьоны и мисты за £7.99 (3365₽) 7 трусиков за £7.99 (3365₽)</span> Халаты за <span>£7.99 (3365₽)<br>Потрать £7.99 (3365₽)</span> - получи <span>купон на $25</span> на следующий заказ",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "levi.com",
+            description: "<a href='#'>Джинсы</a> от <span>£7.99 (3365₽)<br><br>Скидка 30% на заказы от $100 с кодом TREAT30</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "UGG® - вход с VPN",
+            description: "Угги за <span>£7.99 (3365₽)</span> Ботинки UGG от <span>£7.99 (3365₽)</span> в разделе <a href='#'>SALE<br>Мужские угги</a> за <span>£7.99 (3365₽)</span> <a href='#'>Слипперы</a> за <span>£7.99 (3365₽)</span>",
+            link: "<br>Только выкуп с оператором →"
+        }, {
+            header: "New Balance",
+            description: "<span>Вход с VPN</span> - <span>30%</span> на некоторые модели <span>Бесплатная</span> доставка <span>$50+</span>",
+            link: "<br>Только выкуп с оператором →"
+        },
+    ]
+
+.sales
+    +headerMixin(sales,true,true)
+    h2.sales__header Black Friday Early Access ранний доступ к распродажам в магазинах Великобритании!
+    .sales__stores
+        each item,index in salesItems
+            - var i= index + 1
+            .salesStores__item.salesItem
+                if(index < 9)
+                    +image("salesItem__img","sales"+ "0"+i+".png").salesItem__img
+                else if(index => 9)
+                    +image("salesItem__img","sales"+i+".png").salesItem__img
+                .salesItem__content
+                    h2= item.header
+                    .salesItem__text
+                        p !{item.description}
+                        a(href="sales.html") !{item.link}
+    +pageBtns()

@@ -1,0 +1,33 @@
+
+.globalPageBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    
+    &__btn {
+        cursor: pointer;
+        border: 1px solid $color-heather;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        color: $color-heather;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        transition: $transition;
+
+        &_green:hover,&_green.globalPageBtns__numBtn_active {
+            border-color:  $color-caribbean-green;
+            color:  $color-caribbean-green;
+        }
+        &_pink:hover,&_pink.globalPageBtns__numBtn_active {
+            border-color:  $color-wild-watermelon;
+            color:  $color-wild-watermelon;
+        }
+    }
+}

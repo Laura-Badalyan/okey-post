@@ -1,0 +1,43 @@
+-
+    let countryOptions = ['Россия', 'Великобритания', 'Армения', 'Китай', 'Сингапур']
+    let deliveryOptions = ['Выберите услуги', 'Почта России', 'EMS Почта России', 'Почта России мелкие пакеты']
+
+.mainCalculator__properties
+    .mainCalculator__selections
+        .mainCalculator__selectionBlocks.selectionBlocks
+            label.selectionBlocks__label(for='countrySelect')
+                | Страна:
+            .mainCalculator__selects
+                +icon('selectionBlocks__icon', 'globe')
+                select.selectionBlocks__select(name='country' id='countrySelect')
+                    each val in countryOptions
+                        option(value=val).selectionBlocks__option= val
+        .mainCalculator__selectionBlocks.selectionBlocks
+            label.selectionBlocks__label(for='cityInput')
+                | Город:
+            .mainCalculator__selects
+                +icon('selectionBlocks__icon', 'city')
+                input.selectionBlocks__input(type='text' placeholder='Москва' id='cityInput')
+        .mainCalculator__selectionBlocks.selectionBlocks
+            label.selectionBlocks__label(for='indexInput')
+                | Индекс:
+            .mainCalculator__selects
+                +icon('selectionBlocks__icon', 'notebook')
+                input.selectionBlocks__input(type='text' placeholder='Введите индекс' id='indexInput')
+        .mainCalculator__selectionBlocks.selectionBlocks
+            label.selectionBlocks__label(for='weightInput')
+                | Вес посылки:
+            .mainCalculator__selects
+                +icon('selectionBlocks__icon', 'barbell')
+                input.selectionBlocks__input(type='text' placeholder='0,5' id='weightInput')
+        .mainCalculator__selectionBlocks.selectionBlocks
+            label.selectionBlocks__label(for='deliverySelect')
+                | Страна:
+            .mainCalculator__selects
+                +icon('selectionBlocks__icon', 'fileText')
+                select.selectionBlocks__select(name='deliveryOptions' id='deliverySelect')
+                    each val in deliveryOptions
+                        option(value=val).selectionBlocks__option= val
+    .mainCalculator__countBlock
+        button.mainCalculator__orderBtn.btn(type='button')
+            | Рассчитать

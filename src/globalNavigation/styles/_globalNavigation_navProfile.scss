@@ -1,0 +1,57 @@
+.navProfile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-gilroy;
+  font-weight: $font-weight-medium;
+  font-size: 15px;
+  @include tablet-wide {
+    font-size: 13px;
+  }
+  @include tablet {
+    flex-direction: column;
+    max-width: 320px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    margin: 0 auto;
+    display: none;
+  }
+  &__signin{
+    max-width: 73px;
+    max-height: 28px;
+    display: flex;
+    align-items: center;
+    @include tablet{
+      margin: 20px;
+    }
+  }
+  &__text{
+    padding-left: 11px;
+    text-decoration: none;
+    color: $color-shark;
+    font-weight: $font-weight-medium;
+    @include tablet-wide {
+      padding: 0;
+    }
+  }
+  &__btn{
+    font-family: $font-gilroy;
+    font-weight: $font-weight-medium;
+    font-size: 15px;
+    padding: 15px 22px;
+    text-decoration: none;
+    @include desktop {
+      margin: 0 0 0 11px;
+    }
+    @include tablet-wide {
+      font-size: 12px;
+      margin: 0 0 0 5px;
+      padding: 10px 14px;
+    }
+    @include tablet{
+      margin: 0 20px;
+      width: 180px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.globalFooter {
+  width: 100%;
+  &__infoBlock {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 55px;
+    @include tablet-wide {
+      flex-wrap: wrap;
+    }
+    @include tablet {
+      justify-content: center;
+      padding-bottom: 0;
+    }
+
+  }
+
+  &__logoBlock {
+    max-width: 190px;
+    width: 100%;
+    @include tablet-wide {
+      margin: 10px 75px;
+    }
+  }
+
+  &__linksBlock {
+    max-width: 258px;
+    width: 100%;
+    @include tablet-wide {
+      margin: 10px 75px;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+}

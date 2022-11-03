@@ -1,0 +1,20 @@
+.sales{
+  margin: 0 0 160px 0;
+  &__header{
+    font-family: $font-gilroy;
+    font-weight: $font-weight-bolder;
+    font-size: 44px;
+    max-width: 680px;
+    width: 100%;
+    @include tablet-wide{
+      font-size: 38px;
+    }
+  }
+  &__stores{
+    display: flex;
+    flex-wrap: wrap;
+    &__item{
+
+    }
+  }
+}

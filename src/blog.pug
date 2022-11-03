@@ -1,0 +1,22 @@
+extends pug/main
+block content
+    .container
+        include globalNavigation/globalNavigation
+    +headerMixin(blog,false,false)
+    .container
+        include components/blogPage/blogBoxes/blogBoxes
+
+    .container
+            .blog__PageNums
+                +pageBtns(true)
+    .container-fluid.globalSocialBlock--bg
+        .container
+            include globalSocialBlock/globalSocialBlock
+    .container
+        include globalFooter/globalFooter
+        include globalFooter/globalFooterAccordion
+    .container-fluid.globalFooter--border
+        include globalFooter/globalFooterBorder
+block script
+    script(src="js/blog.js")
+    

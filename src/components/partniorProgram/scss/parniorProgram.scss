@@ -1,0 +1,79 @@
+.parniorProgram {
+    &__title {
+        max-width:900px;
+        width: 100%;
+        font-family: $font-gilroy;
+        font-weight: $font-weight-bolder;
+        font-size: 44px;
+        margin-bottom: 25px;
+
+        @include mobile-wide {
+            font-size: 25px;
+            margin-bottom: 40px;
+        }
+
+    }
+
+    &__info {
+        max-width: 605px;
+        font-family: $font-gilroy;
+        font-weight: $font-weight-regular;
+        font-size: 20px;
+        padding-bottom: 40px;
+        color: $color-shark;
+
+    }
+
+    &__icon {
+        max-width: 50px;
+        height: 50px;
+        margin: 20px;
+        @include tablet{
+            margin: 10px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        margin-bottom: 80px;
+        @include mobile-wide {
+            align-items: center;
+
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        width: calc(50% - 10px);
+        padding: 30px;
+        height: 250px;
+        flex-direction: column;
+        @include tablet{
+            padding: 10px;
+        }
+        @include mobile-wide{
+            width: 100%;
+        }
+    }
+
+    &__description {
+        font-weight: $font-weight-regular;
+        font-size: 16px;
+       max-width: 480px;
+       width: 100%;
+
+    }
+
+    &__header {
+        font-family: $font-gilroy;
+        font-weight: $font-weight-bold;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+
+}

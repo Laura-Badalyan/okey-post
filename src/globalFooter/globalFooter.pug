@@ -1,0 +1,22 @@
+- let program = [ { title: 'О компании', textItems: [ { name: 'Услуги ', link: "prices.html" }, { name: 'Цены ', link: "prices.html" }, { name: 'Отзывы ', link: "#feedback__title" }, { name: 'Контакты ', link: "javascript:void(0)" }, { name: 'Вакансии ', link: "javascript:void(0)" }, { name: 'Соглашение о персональных данных ', link: "javascript:void(0)" }, { name: 'Условия использования ', link: "javascript:void(0)" } ] }, { title: 'Полезное', textItems: [ { name: 'Как работает наш сервис ', link: "javascript:void(0)" }, { name: 'Как покупать с оператором ', link: "javascript:void(0)" }, { name: 'Ответы на частые вопросы ', link: "#feedback__title" }, { name: 'Популярные магазины ', link: "javascript:void(0)" }, { name: 'Черный список магазинов ', link: "javascript:void(0)" }, { name: 'Актуальные распродажи ', link: "javascript:void(0)" } ] }, { title: 'Спецпроекты', textItems: [ { name: '50% на первую доставку ', link: "javascript:void(0)" }, { name: 'Скидки для постоянных клиентов ', link: "javascript:void(0)" }, { name: 'Реферальная программа ', link: "#feedback__title" }, { name: 'Кэшбек Mr. Rebates и Rakuten ', link: "javascript:void(0)" }, { name: 'Stop Fraud ', link: "javascript:void(0)" } ] } ]
+
+.globalFooter
+    .globalFooter__infoBlock
+        .globalFooter__logoBlock.logoBlock
+            .logoBlock__mainLogo.mainLogo
+                a.mainLogo__logoLink.logoLink(href='index.html')
+                    +image('logoLink__mainImg','svgicons/navLogo.svg')
+            .logoBlock__socials.socialLinks
+                a.socialLinks__item.logoLink(href='javascript:void(0)')
+                    +icon('logoLink__img','whatsup')
+                a.socialLinks__item.logoLink(href='javascript:void(0)')
+                    +icon('logoLink__img','viber')
+                a.socialLinks__item.logoLink(href='javascript:void(0)')
+                    +icon('logoLink__img','chat')
+        each val in program
+            .globalFooter__linksBlock.linksBlock
+                .linksBlock__headingItem.headingItem
+                    p.headingItem__text= val.title
+                .linksBlock__linksItem.linksItem
+                    each text in val.textItems
+                        a(href=''+ text.link).linksItem__item= text.name

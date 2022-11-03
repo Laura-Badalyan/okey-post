@@ -1,0 +1,173 @@
+//UTILS
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/global";
+
+//COMPONENTS
+
+// ////////////////// GLOBAL COMPONENTS START //////////////////////
+
+//GLOBAL NAVIGATION START
+@import "../globalNavigation/styles/globalNavigation";
+@import "../globalNavigation/styles/globalNavigation_navMenu";
+@import "../globalNavigation/styles/globalNavigation_navProfile";
+@import "../globalNavigation/styles/navMobile";
+@import "../globalNavigation/styles/mobileMenu";
+@import "../globalNavigation/styles/buttonBurger";
+//GLOBAL NAVIGATION END
+
+// GLOBAL FOOTER START
+@import "../globalFooter/scss/globalFooter";
+@import "../globalFooter/scss/globalFooterBorder";
+@import "../globalFooter/scss/headingItem";
+@import "../globalFooter/scss/linksItem";
+@import "../globalFooter/scss/socialLinks";
+@import "../globalFooter/scss/logoLink";
+@import "../globalFooter/scss/globalFooterAccordion";
+@import "../globalFooter/scss/globalFooterAccordionIcon";
+@import "../globalFooter/scss/globalFooterAccordionItem";
+@import "../globalFooter/scss/globalFooterAccordionTitle";
+@import "../globalNavigation/styles/navMobile";
+@import "../globalNavigation/styles/mobileMenu";
+@import "../globalNavigation/styles/buttonBurger";
+// GLOBAL FOOTER END
+
+// GLOBAL SOCIAL BLOCK START
+@import "src/globalSocialBlock/scss/globalSocialBlock";
+@import "src/globalSocialBlock/scss/logoLink";
+@import "src/globalSocialBlock/scss/socialLinks";
+// GLOBAL SOCIAL BLOCK END
+
+// GLOBAL PAGE NUMBERS  START
+@import "../globalPageBtns/scss/globalPageBtns";
+// GLOBAL PAGE NUMBERS  START END
+
+// ////////////////// GLOBAL COMPONENTS END //////////////////////
+
+// ////////////////// MainPage COMPONENTS START //////////////////////
+
+// mainHeader start
+@import "../components/mainPage/mainHeader/mainHeader";
+// mainHeader end
+
+// Slider start
+@import "../components/mainPage/mainSliders/scss/mainSliders";
+@import "../components/mainPage/mainSliders/scss/categorySlider";
+@import "../components/mainPage/mainSliders/scss/productsSlider";
+@import "../components/mainPage/mainSliders/scss/productSliderInfoBlock";
+// Slider end
+
+// mainFeatures start
+@import "../components/mainPage/mainFeatures/mainFeatures";
+// mainFeatures end
+
+//mainOrder start
+@import "../components/mainPage/mainOrder/mainOrder";
+//mainOrder end
+
+//mainOrderSecond start
+@import '../components/mainPage/mainOrderSecond/mainOrderSecond';
+//mainOrderSecond end
+
+//mainSubscribtion start
+@import '../components/mainPage/mainSubscribtion/mainSubscribtion';
+//mainSubscribtion end
+
+//mainDeliveryOptions start
+@import "../components/mainPage/mainCalculator/scss/mainCalculator";
+@import "../components/mainPage/mainCalculator/scss/selectionBlocks";
+//mainDeliveryOptions end
+
+//mainDeliveryOptions start
+@import "../components/mainPage/mainDeliveryOptions/scss/mainDeliveryOptions";
+@import "../components/mainPage/mainDeliveryOptions/scss/contentItem";
+@import "../components/mainPage/mainDeliveryOptions/scss/accordioItem";
+//mainDeliveryOptions end
+
+// Main Steps start
+@import "../components/mainPage/mainSteps/scss/mainSteps";
+@import "../components/mainPage/mainSteps/scss/mainStepsTitle";
+// Main Steps END
+
+// MainClientTopics start
+@import "../components/mainPage/mainClientTopics/_mainClientTopic";
+// MainclientTopics end
+
+// FeedBack start
+@import "../components/mainPage/mainFeedback/mainFeedback";
+// FeedBack end
+
+//MAIN ADDRESS START
+@import "../components/mainPage/mainAddress/mainAddress";
+//MAIN ADDRESS END
+
+// ////////////////// MainPage COMPONENTS END //////////////////////
+
+// ////////////////// howToBuy COMPONENTS START //////////////////////
+
+// howToBuy start
+@import "../components/howToBuy/howToBuy.scss";
+// howToBuy end
+// ////////////////// howToBuy COMPONENTS END //////////////////////
+
+// ////////////////// shopsPage COMPONENTS START //////////////////////
+
+@import "../components/shops/scss/shopsPage.scss";
+
+// ////////////////// shopsPage COMPONENTS END //////////////////////
+
+// blog start
+@import "../components/blogPage/blogBoxes/scss/blogBoxes.scss";
+@import "../components/blogPage/blogBoxes/scss/blog.scss";
+// blog end
+// //////////
+
+//////////////////// SALES COMPONENTS START //////////////////////
+
+@import "../components/sales/scss/sales";
+@import "../components/sales/scss/salesItem";
+
+//////////////////// SALES COMPONENTS END //////////////////////
+
+// //////////////////// prices COMPONENTS START //////////////////////
+
+@import "../components/prices/pricesServices/scss/pricesServices";
+@import "../components/prices/pricesOrder/scss/pricesOrder";
+
+
+//////////////////// prices COMPONENTS END //////////////////////
+
+
+
+// ////////////////// FAQ COMPONENTS START //////////////////////
+
+// FAQ start
+@import "../components/FAQ/scss/faqAccordion";
+@import "../components/FAQ/scss/faqAccordionIcon";
+@import "../components/FAQ/scss/faqAccordionItem";
+@import "../components/FAQ/scss/searchBlock";
+// FAQ end
+
+// ////////////////// FAQ COMPONENTS END //////////////////////
+
+// ////////////////// PartniorProgram COMPONENTS START //////////////////////
+
+// partniorProgram start
+// @import "../components/partniorProgram/parniorProgram.scss";
+@import "../components/partniorProgram/scss/parniorProgram";
+@import "../components/partniorProgram/scss/partniorOrder";
+// partniorProgram end
+// ////////////////// PartniorProgram COMPONENTS END //////////////////////
+
+//////////////////// Prices COMPONENTS START //////////////////////
+
+@import "../components/prices/scss/store";
+@import "../components/prices/scss/storeServices";
+@import "../components/prices/scss/serviceItem";
+@import "../components/prices/scss/servicesBlock";
+@import "../components/prices/scss/priceGlobal";
+
+//////////////////// Prices COMPONENTS END //////////////////////
+
+

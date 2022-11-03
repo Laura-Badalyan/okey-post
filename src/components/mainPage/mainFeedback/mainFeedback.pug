@@ -1,0 +1,51 @@
+- 
+    let feedBack=[
+
+    {   feedbackImg: "feedBack1.png",
+        feedbackcomentaiter: "NIKOLAY S",
+        rate: "star",
+        feedback:"Ваша доставка самая быстрая и дешёвая!!!",
+        feedbacktime:"16 Ноября 2021",
+        feedbackcity:"Санкт-Петербург"
+    },
+    {   feedbackImg: "feedBack2.png",
+        feedbackcomentaiter: "DMITRIY D",
+        rate: "star",
+        feedback:"Пуховик Levi’s c eBay. Всё приехало быстро и целым.",
+        feedbacktime:"16 Ноября 2021",
+        feedbackcity:"Москва"
+    },
+    {   feedbackImg: "feedBack3.png",
+        feedbackcomentaiter: "VLADIMIR E",
+        rate: "star",
+        feedback:"Огонь, как всегда! Отдельное спасибо за доп.упаковку, часики от Apple пришли в простом бумажном пакете)",
+        feedbacktime:"16 Ноября 2021",
+        feedbackcity:"Санкт-Петербург"
+    },
+    {   feedbackImg: "feedBack4.png",
+        feedbackcomentaiter: "Оксана",
+        rate: "star",
+        feedback:"Очень быстро, надежно! Как всегда большое спасибо за работу!",
+        feedbacktime:"16 Ноября 2021",
+        feedbackcity:"Odintsovo"
+    },
+    ]
+
+
+.feedback
+    #feedback__title.feedback__title Отзывы и цитаты блогеров:
+    .feedback__wrapper 
+        each item in feedBack
+            .feedback__item.shadow-box
+                +image("feedback__avatar", item.feedbackImg)
+                .feedback__content
+                    .feedback__name= item.feedbackcomentaiter
+                    .feedback__rate
+                        each _ in Array(5)
+                            +icon('feedback__rateIcon','star')
+                    .feedback__opinion= item.feedback
+                    .feedback__time= item.feedbacktime
+                    .feedback__city= item.feedbackcity
+    .feedback__links
+        a(href="href='javascript:void(0)" class="btn")  Все отзывы
+

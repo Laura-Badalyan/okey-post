@@ -1,0 +1,12 @@
+-var services= [{name: 'Консолидация ', price: '£1.00/1 трек'}, {name: 'Заполнение декларации', price: '£1.00'}, {name: 'Дополнительная упаковка', price: '£5.00'},{name: 'Упаковка xрупкиx предметова', price: '£10.00'}, {name: 'Заполнение декларации', price: '£1.00'}, {name: 'Разделение заказа', price: '£2.00'}]
+-var storeServices= [{name: 'Сборка исходящей посылки вне очереди или экспресс сборка', price: '£5.00', elaboration: 'Чтобы сэкономить время'}, {name: 'Фото содержимого входящей посылки',  price: '£1.00 за 1 фото', elaboration: '3 фото за $5 или 10 фото за $8, а ещё можно попросить сфотографировать бирку или подарочный сертификат'},{name: 'Возврат вещей в магазин', price: '£10 + почтовые расходы', elaboration: 'В случае, если вещи нельзя отправить в страну назначения, возврат в магазин для услуги "Виртуальный адрес"'}, {name: 'Проверка техники на работоспособность', price: '£10', elaboration: 'Проверка электроники на включение/выключение (запрос через тикеты).'}, {name: 'Удаление инвойса',  price: 'Бесплатно', elaboration: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'}, {name: 'Дополнительная упаковка', price: 'По договоренности', elaboration: 'Чтобы сэкономить время'}]
+.store
+    h3.store__title.serviceTitle Услуги склада
+    .store__serviceDescBlock.servicesBlock
+        .servicesBlock__serviceBlock
+            each service in services
+                +service(service.name, service.price, false)
+        .servicesBlock__storeServices.storeServices
+            each store in storeServices
+                +service(store.name, store.price,store.elaboration, true)
+

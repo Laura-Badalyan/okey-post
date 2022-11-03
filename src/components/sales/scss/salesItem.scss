@@ -1,0 +1,62 @@
+.salesItem{
+  display: none;
+  width: 50%;
+  padding: 40px 0;
+  overflow: hidden;
+  &_active{
+    display: flex;
+    @include tablet-wide{
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  }
+  &__img{
+    max-width: 328px;
+    min-height: 360px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    @include tablet-wide{
+      align-items: center;
+    }
+  }
+  &__content{
+    margin: 19px 33px 0 56px;
+    font-family: $font-gilroy;
+    line-height: 36px;
+    @include tablet-wide{
+      margin: 50px;
+      width: 40%;
+      text-align: justify;
+    }
+    @include mobile-wide{
+      width: 90%;
+    }
+    & span {
+      font-weight: $font-weight-bold;
+    }
+    & > h2{
+      padding-bottom: 15px;
+      @include tablet-wide{
+        text-align: center;
+      }
+    }
+    & a{
+      color: $color-caribbean-green;
+      font-weight: $font-weight-bold;
+      font-size: 18px;
+    }
+    & p{
+      font-weight: $font-weight-regular;
+      font-size: 18px;
+    }
+  }
+}

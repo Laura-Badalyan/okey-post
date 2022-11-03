@@ -1,0 +1,102 @@
+.mainSteps {
+    background: $color-white;
+    margin-bottom: 150px;
+
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        @media(max-width:1300px) {
+            flex-wrap: wrap;
+
+        }
+        @include mobile-wide{
+            width: calc(100% - 10px);
+    
+    
+          }
+    
+    }
+
+    &_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom:50px;
+        width: 100%;
+        
+
+        @media(max-width:1300px) {
+            width: calc(50% - 10px);
+            font-size: 18px;
+        }
+        @include mobile-wide{
+            width: calc(100% - 10px);
+    
+    
+        }
+
+      
+
+    }
+    &_stepsImg {
+        display: flex;
+        align-items:center;
+        max-width: 300px;
+        width: 100%;
+       
+    }
+    &_itemTitle {
+        
+        font-family: $font-gilroy;
+        font-weight: $font-weight-bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: $color-shark;
+
+
+
+    }
+
+    &_itemdescription {
+        font-family: $font-gilroy;
+        font-weight: $font-weight-regular;
+        font-size: 16px;
+        line-height: 30px;
+        color: $color-shark;
+ 
+    }
+     &_link{
+        color:$color-caribbean-green;
+    }
+
+
+    &_description {
+        max-width: 768px;
+        width: 100%;
+        align-items: center;
+        font-family: $font-gilroy;
+        font-weight: $font-weight-regular;
+        font-size: 20px;
+        line-height: 36px;
+        color: $color-shark;
+        @include tablet  {
+           font-size: 13px;
+   
+         }
+   
+    }
+
+    &_button{
+      @include mobile-wide{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+   
+       
+      }
+    }
+
+}

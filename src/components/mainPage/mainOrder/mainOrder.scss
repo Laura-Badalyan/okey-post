@@ -1,0 +1,125 @@
+.mainOrder {
+  overflow: hidden;
+  font-family: $font-gilroy;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  flex-direction: row-reverse;
+  align-items: center;
+  @media(max-width: 1600px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @include mobile {
+    padding: 20px 15px;
+  }
+
+  &__textBlock {
+    @include tablet-wide {
+      width: 50%
+    }
+    @media(max-width: 768px) {
+      width: 100%;
+    }
+
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 800;
+    color: $color-white;
+    margin: 0;
+    @include tablet-wide {
+      font-size: 24px;
+    }
+  }
+
+  &__details {
+    font-size: 20px;
+    line-height: 42px;
+    color: $color-white;
+    max-width: 707px;
+    width: 100%;
+    @include tablet-wide {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+
+  &__orderBtn {
+    @include tablet {
+      margin-bottom: 36px;
+    }
+    @media(max-width: 768px) {
+      margin: 20px auto 0;
+      padding: 24px 20px;
+      display: block;
+    }
+  }
+
+  &__parallaxBlock {
+    position: relative;
+    margin-right: 75px;
+    max-width: 400px;
+    width: 100%;
+    @media(max-width: 1280px) {
+      max-width: 350px;
+    }
+    @include tablet-wide {
+      width: 50%
+    }
+    @include tablet {
+      margin-right: 20px
+    }
+    @media(max-width: 768px) {
+      display: none;
+    }
+
+  }
+
+  &__parallaxBack {
+    width: 100%;
+    @include tablet-wide {
+      max-width: 450px;
+      width: 100%;
+    }
+  }
+
+  &__parallaxGirl {
+    position: absolute;
+    right: 40px;
+    top: 88px;
+    max-width: 250px;
+    width: 100%;
+    @media(max-width: 1280px) {
+      top: 47px;
+      right: 0;
+    }
+    @media(max-width: 850px) {
+      top: 47px;
+      right: 0;
+    }
+    @include tablet {
+      width: 70%;
+    }
+    @media(max-width: 530px) {
+      max-width: initial;
+      width: 70%;
+    }
+
+  }
+
+
+  &--bg {
+    background-image: linear-gradient(to right, $color-butterfly-bush 0%, $color-picton-blue 100%);
+    border-radius: 36px;
+    margin: 0 0 160px 0;
+  }
+
+  &__parallax {
+
+  }
+}

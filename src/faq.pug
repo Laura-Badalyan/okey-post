@@ -1,0 +1,18 @@
+extends pug/main
+
+block content
+    .container
+        include globalNavigation/globalNavigation
+    +headerMixin(faq, false, false)
+    .container
+        include components/FAQ/faqPage
+    .container-fluid.globalSocialBlock--bg
+        .container
+            include globalSocialBlock/globalSocialBlock
+    .container
+        include globalFooter/globalFooter
+        include globalFooter/globalFooterAccordion
+    .container-fluid.globalFooter--border
+        include globalFooter/globalFooterBorder
+block script
+    script(src="js/faq.js")

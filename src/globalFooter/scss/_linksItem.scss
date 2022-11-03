@@ -1,0 +1,17 @@
+.linksItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__item {
+    font-family: $font-gilroy;
+    font-weight: $font-weight-regular;
+    text-decoration: none;
+    color: $color-shark;
+    font-size: 14px;
+    line-height: 20px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

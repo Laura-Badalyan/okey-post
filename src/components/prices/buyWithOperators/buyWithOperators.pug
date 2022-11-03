@@ -1,0 +1,6 @@
+-var storeServices= [{name: 'Быстрое оформление покупок в интернет-магазинах', price: '5% от стоимости товаров минимум £7 для каждого магазина Но не менее £7 для каждого лота eBay', elaboration: 'Вы присылаете ссылки, а оформлением заказов занимаются операторы Почтой.ком. Они сделают покупки за вас, проконтролируют доставку на склад и сообщат, когда всё будет готово.'}, {name: 'Фото товара по услуге "Покупка с операторами',  price: '£2', elaboration: 'Три фото выбранного вами товара, приобретенного по услуге "Полное сопровождение"'}]
+.buyWithOperators
+    h3.buyWithOperators__title.serviceTitle Покупки с операторами Okeypost.com
+    .buyWithOperators__storeServices.storeServices
+        each store in storeServices
+            +service(store.name, store.price,store.elaboration, true)

@@ -1,0 +1,40 @@
+.searchBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px 45px;
+  box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+  border-radius: 16px;
+  margin-bottom: 100px;
+
+  &__label {
+    font-weight: $font-weight-bold;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__inputBlock {
+    display: flex;
+  }
+  &__input {
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid $color-mine-shaft;
+    border-right: none;
+    padding: 25px 0;
+    width: 100%;
+
+    &:active {
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    @include svg(57px, 66px, $color-caribbean-green);
+    border-bottom: 1px solid $color-mine-shaft;
+    padding: 16px 0;
+  }
+}

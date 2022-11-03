@@ -1,0 +1,42 @@
+//- //- -let links='<a href="#">адрес склада</a>'
+//- -let links= 'a (href="#")'
+//- p!= links
+
+-
+    let mainSteps=[
+         {
+            mainStepsImg: "mainSteps1.png",
+            mainStepsTitle:"ВЫБИРАЕТЕ ТОВАР",
+            mainStepsDescription:"в английском магазине, оплачиваете и указываете <a class='mainSteps_link' href='javascript:void(0)'>адрес склада</a>  OkeyPost"
+            
+        },
+         {
+            mainStepsImg: "mainSteps2.png",
+            mainStepsTitle:"ПОКУПКИ ПРИХОДЯТ НА СКЛАД",
+            mainStepsDescription:"и появляются в вашем личном кабинете на нашем сайте",
+            
+        },
+         {
+            mainStepsImg: "mainSteps3.png",
+            mainStepsTitle:"ОТПРАВЛЯЕМ ИХ К ВАМ ДОМОЙ",
+            mainStepsDescription:"в надежной упаковке, по выгодной цене и очень быстро",
+            
+        },
+         {
+            mainStepsImg: "mainSteps4.png",
+            mainStepsTitle:"ЗАБИРАЕТЕ свою ПОСЫЛКУ",
+            mainStepsDescription:"в пункте выдачи, на почте или с <br> курьером",
+            
+        },
+    ]
+.mainSteps
+    .mainSteps_title 4 простых шага для ваших покупок в Великобритании
+    .mainSteps_wrapper
+        each mainStepsItem in mainSteps 
+            .mainSteps_item
+                +image('mainSteps_stepsImg',mainStepsItem.mainStepsImg)
+                .mainSteps_itemTitle !{mainStepsItem.mainStepsTitle}
+                .mainSteps_itemdescription !{mainStepsItem.mainStepsDescription} 
+    p.mainSteps_description Не хотите разбираться самостоятельно, наши мастера шопинга с радостью купят все товары за вас.
+    .mainSteps_button
+        button.btn Быстрая покупка

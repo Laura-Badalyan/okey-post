@@ -1,0 +1,99 @@
+@import "vars";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-gilroy;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  color: $color-white;
+  font-family: $font-gilroy;
+  font-weight: $font-weight-bold;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  border-radius: 36px;
+  background-color: $color-caribbean-green;
+  border: none;
+  cursor: pointer;
+  padding: 24px 35px;
+  margin-top: 36px;
+  transition: $transition;
+  &:hover {
+    background: $color-picton-blue;
+    color: $color-shark;
+  }
+}
+
+
+.title {
+  font-weight: $font-weight-bolder;
+  font-size: 44px;
+  line-height: 50px;
+  color: $color-shark;
+}
+
+
+.shadow-box{
+  border-radius:  $small-radius;
+  box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+  overflow: hidden;
+}
+
+.greenText{
+  color: $color-caribbean-green;
+}
+.pageHeader {
+  overflow: hidden;
+  font-family: $font-gilroy;
+  padding: 30px 35px;
+  color: $color-white;
+  &--bg {
+    background-image: linear-gradient(to right, $color-butterfly-bush 0%, $color-picton-blue 100%);
+    border-radius: 36px;
+    margin: 0 0 100px 0;
+  }
+  &__name {
+    font-size: 13px;
+  }
+  &__title {
+    margin: 15px 0;
+    font-size: 48px;
+    @include tablet-wide {
+      font-size: 24px;
+    }
+  }
+  &__description {
+    font-size: 24px;
+  }
+}
+.serviceTitle {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 56px;
+    margin-bottom: 30px;
+}

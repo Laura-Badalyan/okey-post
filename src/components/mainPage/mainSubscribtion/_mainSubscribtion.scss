@@ -1,0 +1,122 @@
+.mainSubscribtion {
+  overflow: hidden;
+  font-family: $font-gilroy;
+  padding: 30px 0;
+  @media(max-width: 1600px) {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  @include mobile {
+    padding: 20px 15px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet {
+      flex-direction: column
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: $color-white;
+    margin: 0;
+    width: 32%;
+    @include tablet-wide {
+      font-size: 24px;
+    }
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 60%;
+    @include tablet {
+      width: 100%;
+      justify-content: start;
+    }
+    @include mobile-wide {
+      flex-direction: column;
+    }
+
+  }
+
+  &__mainForm {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 42px;
+    color: $color-white;
+    max-width: 460px;
+    margin: 0 25px;
+    border-bottom: 1px solid $color-white;
+    width: 100%;
+    flex-wrap: wrap;
+
+    @include tablet-wide {
+      font-size: 18px;
+    }
+    @include tablet {
+      width: 100%;
+      margin: 0 25px 0 0;
+
+    }
+    @include mobile {
+      font-size: 15px;
+      line-height: 30px;
+      margin: 0 25px;
+    }
+  }
+
+  &__inputIcon {
+    margin-right: 15px;
+  }
+
+  &__mailInput {
+    border: none;
+    padding: 20px 10px;
+    width: 100%;
+    background: none;
+    color: $color-white;
+    font-size: 16px;
+    flex-basis: 80%;
+
+    &::placeholder {
+      color: $color-white;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+
+  &__orderBtn {
+    margin-top: 0;
+    height: fit-content;
+    @include mobile-wide {
+      margin-top: 30px;
+    }
+  }
+
+  &__mailValidMsg {
+    font-size: 13px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+  }
+
+  &--bg {
+    background-image: linear-gradient(to right, $color-butterfly-bush 0%, $color-picton-blue 100%);
+    border-radius: 36px;
+    margin: 0 0 160px 0;
+  }
+
+}

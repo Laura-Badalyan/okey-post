@@ -1,0 +1,28 @@
+-
+    let data=[
+        {
+            icon:"calendar",
+            title:"Больше не значит дороже",
+            description:"С ростом веса посылки цена за каждые 0.5 кг уменьшается в прогрессии.",
+        },
+        {
+            icon:"clock",
+            title:"Быстрая обработка посылок",
+            description:"Посылка обрабатывается не дольше 48 часов после поступления на склад.",
+        },
+        {
+            icon:"notification",
+            title:"SMS-уведомления",
+            description:"Отслеживайте весь процесс с помощью sms-уведомлений.",
+        }
+    ]
+
+.clientTopic 
+    .clientTopic__title 120 000 довольных клиентов в России уже сделали свой выбор
+    .clientTopic__info  За последний год десятки тысяч наших клиентов заказали товары из Англии и оставили 19 633 отзыва
+    .clientTopic__wrapper
+        each item in data
+           .clientTopic__item.shadow-box
+                +icon("clientTopic__icon", item.icon)
+                .clientTopic__header= item.title
+                .clientTopic__description= item.description

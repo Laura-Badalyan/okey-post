@@ -1,0 +1,9 @@
+.globalFooterBoder {
+  &__text {
+    border-top: 1px solid $color-heather;
+    padding: 34px 0;
+    text-align: center;
+    font-family: $font-gilroy;
+    font-size: 13px;
+  }
+}

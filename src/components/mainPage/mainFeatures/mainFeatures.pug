@@ -1,0 +1,7 @@
+- let items = [{icon: 'img/svgicons/mainFeatureLogo.svg', text: 'Экономия до 70%'}, {icon: 'img/svgicons/original.svg', text: 'Только подлинная продукция'}, {icon:'img/svgicons/operativeDelivery.svg', text:'Оперативная доставка'}, {icon: 'img/svgicons/prodSelection.svg', text: 'Огромный выбор товаров'}]
+
+.mainFeatures.shadow-box
+    each item in items
+        .mainFeatures_item
+            img(src=item.icon).mainFeatures_itemImg
+            p.mainFeatures_itemText= item.text

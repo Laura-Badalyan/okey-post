@@ -1,0 +1,35 @@
+- var menuItems = [{name: "Как покупать",link:"howToBuy.html"}, {name: "Распродажи",link:"sales.html"}, {name: "Цены", link:"prices.html"}, {name:"Помощь", link:"faq.html"},{name: "Бонусы", link:"partniorProgram.html"}, {name:"Блог", link:"blog.html"}, {name:"Магазины", link:"shops.html"}]
+
+nav.nav
+    a.nav__logo(href="index.html")
+        +image("nav__logoImg","svgicons/navLogo.svg")
+
+    .nav__mobile.navMobile
+        .navMobile__navigation
+
+            .navMobile__buttonBurger.buttonBurger
+                .buttonBurger__burger
+                    .buttonBurger__block
+                        .buttonBurger__item
+                        .buttonBurger__item
+                        .buttonBurger__item
+        .navMobile__menu.mobileMenu.mobileMenu__hide
+            ul.mobileMenu__list
+                each val in menuItems
+                    li.mobileMenu__item
+                        a.mobileMenu__link(href=""+ val.link)= val.name
+                .nav__profile.navProfile.navProfileBurger
+                    .navProfile__signin
+                        +image("navProfile__logo","svgicons/userLogo.svg")
+                        a.navProfile__text(href="javascript:void(0);") Вход
+                    a.navProfile__btn.btn(href="tel:+79888888888") Связаться с нами
+
+    ul.nav__menu.navMenu
+        each val in menuItems
+            li.navMenu__item
+                a.navMenu__link(href=""+ val.link)= val.name
+    .nav__profile.navProfile
+        .navProfile__signin
+            +image("navProfile__logo","svgicons/userLogo.svg")
+            a.navProfile__text(href="javascript:void(0);") Вход
+        a.navProfile__btn.btn(href="tel:+79888888888") Связаться с нами

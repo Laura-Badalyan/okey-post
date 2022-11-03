@@ -1,0 +1,12 @@
+.mainSteps_title {
+    font-family: $font-gilroy;
+    font-weight: $font-weight-bolder;
+    font-size: 44px;
+    line-height: 56px;
+    color: $color-shark;
+    max-width: 695px;
+    width: 100%;
+    @include mobile-wide{
+        font-size: 35px;
+    }
+}
